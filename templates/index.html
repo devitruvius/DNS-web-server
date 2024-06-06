@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Exemplo de Flask</title>
+    <link rel="stylesheet" type="text/css" href="./static/styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Envie Dados para o Servidor</h1>
+        
+        <!-- Formulário para enviar dados via POST -->
+        <form method="post" action="/">
+            <input type="text" name="data" placeholder="Digite seus dados aqui">
+            <button type="submit">Enviar</button>
+        </form>
+
+        <h2>Soma de Números via GET</h2>
+        <!-- Formulário para soma usando GET -->
+        <form method="get" action="/sum">
+            <input type="number" name="num1" placeholder="Digite o primeiro número">
+            <input type="number" name="num2" placeholder="Digite o segundo número">
+            <button type="submit">Calcular</button>
+        </form>
+
+        <h2>Soma de Números via POST</h2>
+        <!-- Formulário para soma usando POST -->
+        <form method="post" action="/sum">
+            <input type="number" name="num1" placeholder="Digite o primeiro número">
+            <input type="number" name="num2" placeholder="Digite o segundo número">
+            <button type="submit">Calcular</button>
+        </form>
+    </div>
+
+    <footer>
+        &copy; 2024 - Redes e Sistemas Distribuídos, UFCA
+    </footer>
+</body>
+
+</html>
