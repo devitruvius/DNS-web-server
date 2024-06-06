@@ -27,7 +27,7 @@ O objetivo desta aplicação é demonstrar os conceitos básicos de desenvolvime
 3. Crie e ative um ambiente virtual:
 
     ```
-    python3 -m venv venv
+    python -m venv venv
     source venv/bin/activate
     ```
 
