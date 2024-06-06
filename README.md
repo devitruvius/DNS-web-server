@@ -24,11 +24,32 @@ O objetivo desta aplicação é demonstrar os conceitos básicos de desenvolvime
     cd DNS-web-server
     ```
 
-3. Crie e ative um ambiente virtual:
+3. Crie um ambiente virtual:
+
+   **No Unix/Linux:**
+
+    ```
+    python3 -m venv venv
+    ```
+
+   **No Windows:**
 
     ```
     python -m venv venv
+    ```
+
+4. Ative o ambiente virtual:
+
+   **No Unix/Linux:**
+
+    ```
     source venv/bin/activate
+    ```
+
+   **No Windows:**
+
+    ```
+    venv\Scripts\activate
     ```
 
 ### Execução
