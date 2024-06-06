@@ -2,21 +2,24 @@ from flask import Flask, request, render_template
 
 app = Flask(__name__)
 
+# Define a rota principal que responde a solicitações GET com a renderização de um template HTML.
 @app.route('/', methods=['GET'])
 def index():
     return render_template('index.html')
 
+# Define uma rota para processar dados enviados via POST e retorna uma mensagem com esses dados.
 @app.route('/', methods=['POST'])
 def process_data():
     data = request.form['data']
     return f'Os dados enviados foram: {data}'
 
+# Define uma rota para receber dados via GET e retorna uma mensagem com esses dados.
 @app.route('/receive', methods=['GET'])
 def receive_data():
     data = request.args.get('data')
     return f'Os dados enviados via GET são: {data}'
 
-# Nova rota para soma usando GET
+# Define uma nova rota para realizar a soma de dois números fornecidos via GET.
 @app.route('/sum', methods=['GET'])
 def sum_get():
     num1 = request.args.get('num1', type=int)
@@ -27,7 +30,7 @@ def sum_get():
     else:
         return 'Por favor, forneça dois números.', 400
 
-# Nova rota para soma usando POST
+# Define uma nova rota para realizar a soma de dois números fornecidos via POST.
 @app.route('/sum', methods=['POST'])
 def sum_post():
     try:
@@ -38,5 +41,6 @@ def sum_post():
     except (ValueError, KeyError):
         return 'Por favor, forneça dois números válidos.', 400
 
+# Inicia o aplicativo Flask se este script for executado diretamente.
 if __name__ == '__main__':
     app.run()
