@@ -5,8 +5,6 @@ O objetivo desta aplicação é demonstrar os conceitos básicos de desenvolvime
 
 ## Usabilidade
 
-Este projeto pode ser usado como um ponto de partida para o desenvolvimento de aplicativos web usando o framework Flask. Ele fornece uma estrutura básica que pode ser expandida e personalizada de acordo com os requisitos do projeto.
-
 ### Requisitos
 
 - Python 3.x
