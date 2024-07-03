@@ -64,7 +64,7 @@ Acesse o aplicativo em seu navegador em `http://127.0.0.1:5000/`
 
 ## Navegação
 * [Repositório de Atividades - Análise e Desenvolvimento de Sistemas (UFCA)](https://github.com/devitruvius/college-repository)
-    * [Rede e Sistemas Distribuídos](https://github.com/devitruvius/ADS-distributed-networks-systems)
+    * [Redes e Sistemas Distribuídos](https://github.com/devitruvius/ADS-distributed-networks-systems)
 
 ## Licença
 
